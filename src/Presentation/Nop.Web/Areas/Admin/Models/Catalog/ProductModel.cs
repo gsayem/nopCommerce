@@ -422,6 +422,9 @@ namespace Nop.Web.Areas.Admin.Models.Catalog
         //stock quantity history
         public StockQuantityHistoryModel StockQuantityHistory { get; set; }
 
+        [NopResourceDisplayName("Admin.Catalog.Products.Fields.Author")]
+        public string Author { get; set; }
+
         #region Nested classes
 
         public partial class AddRequiredProductModel : BaseNopModel

@@ -1465,6 +1465,14 @@ label, label + * {
 .item-box .product-title a:hover {
 	color: #248ece;
 }
+.item-box .author-name {
+    margin: -25px 0 10px;
+    overflow: hidden;
+    font-size: 12px;
+    line-height: 1.2;
+    font-weight: normal;
+    color: black;
+}
 .item-box .sku {
     margin: 0 0 15px;
 }
