@@ -1,0 +1,11 @@
+﻿{
+  "Group": "Widgets",
+  "FriendlyName": "Task2: Message Display",
+  "SystemName": "Widgets.Task2MessageDisplay",
+  "Version": "1",
+  "SupportedVersions": [ "4.00" ],
+  "Author": "Sayem",
+  "DisplayOrder": 1,
+  "FileName": "Nop.Plugin.Widgets.Task2MessageDisplay.dll",
+  "Description": "This plugin will show the message in product details page"
+}

@@ -1770,6 +1770,14 @@ label, label + * {
 	line-height: 22px;
 	color: #666;
 }
+.overview .author-name {
+    margin: 0px;
+    overflow: hidden;
+    font-size: 12px;
+    line-height: 1.2;
+    font-weight: normal;
+    color: black;
+}
 
 .product-no-reviews,
 .product-reviews-overview {
@@ -5075,7 +5083,14 @@ pre {
 }
 
 
+.task2-message-widgets {
+    text-align: right;
+    vertical-align: middle;
+    color: #00bcd4;
+    font-weight: bold;
+}
 
+   
 
 
 @media all and (max-width: 1000px) {

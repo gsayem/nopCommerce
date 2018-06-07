@@ -64,6 +64,12 @@
                             <h1 itemprop="name">
                                 @Model.Name
                             </h1>
+                            @if (!string.IsNullOrEmpty(Model.Author))
+                            {
+                                <div class="author-name">
+                                    @Html.Raw(Model.Author)
+                                </div>
+                            }
                         </div>
                         @if (!string.IsNullOrEmpty(Model.ShortDescription))
                         {
@@ -71,6 +77,7 @@
                                 @Html.Raw(Model.ShortDescription)
                             </div>
                         }
+                        
                         @await Component.InvokeAsync("Widget", new { widgetZone = "productdetails_overview_top", additionalData = Model.Id })
                         <!--product reviews-->
                         @await Html.PartialAsync("_ProductReviewOverview", Model.ProductReviewOverview)

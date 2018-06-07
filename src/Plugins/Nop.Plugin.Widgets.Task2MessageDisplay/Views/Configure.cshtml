@@ -1,0 +1,40 @@
+﻿@model Nop.Plugin.Widgets.Task2MessageDisplay.Models.ConfigurationModel
+
+@{
+    Layout = "_ConfigurePlugin";
+}
+
+
+@await Component.InvokeAsync("StoreScopeConfiguration")
+<form asp-controller="WidgetsTask2MessageDisplay" asp-action="Configure" method="post">
+    <div class="panel-group">
+        <div class="panel panel-default">
+            <div class="panel-heading">
+                @T("Plugins.Widgets.Task2MessageDisplay.MessageText")
+            </div>
+            <div class="panel-body">
+               
+                <div class="form-group">
+                    <div class="col-md-3">
+                        <nop-override-store-checkbox asp-for="MessageText_OverrideForStore" asp-input="MessageText" asp-store-scope="@Model.ActiveStoreScopeConfiguration" />
+                        <nop-label asp-for="MessageText" />
+                    </div>
+                    <div class="col-md-9">
+                        <nop-editor asp-for="MessageText" />
+                        <span asp-validation-for="MessageText"></span>
+                    </div>
+                </div>
+               
+            </div>
+        </div>
+        <div class="panel panel-default">
+            <div class="panel-body">
+                <div class="form-group">
+                    <div class="col-md-9 col-md-offset-3">
+                        <input type="submit" name="save" class="btn bg-blue" value="@T("Admin.Common.Save")" />
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</form>
